@@ -246,19 +246,19 @@ input {
   background: url(../img/banner.png) no-repeat;
   height: 230px;
   background-position-x: center;
-}
-.wrapper .header .banner h1 {
-  margin: 0;
-  font-size: 4em;
-  font-weight: 300;
+  /*h1 {
+				margin: 0;
+				font-size: @header-font-size;
+				font-weight: 300;
+			}*/
 }
 .wrapper .header nav a {
   text-decoration: none;
   color: #752225;
   margin: 0 30px;
   padding: 5px 10px;
-  font-weight: 700;
-  font-size: 1.6em;
+  /*font-weight: 700;*/
+  font-size: 1.8em;
   -webkit-transition: 0.3s color;
   -moz-transition: 0.3s color;
   -ms-transition: 0.3s color;
@@ -279,8 +279,8 @@ input {
 }
 .wrapper .body-container .main-banner {
   padding: 20px 0 0 0;
-  height: 480px;
-  background: url(../img/main-banner.png) no-repeat;
+  height: 500px;
+  background: url(../img/IMG_0425.png) no-repeat;
   background-size: cover;
   /*background: url(../img/board.png) no-repeat;*/
 }
@@ -311,9 +311,10 @@ input {
   padding-left: 40px;
   background: url('../img/brush.png') no-repeat;
   background-position-y: center;
+  font-size: 2.6em;
 }
 .wrapper .body-container .body-section p {
-  margin-left: 40px;
+  margin-left: 10px;
 }
 .wrapper .body-container .body-section .about-us {
   width: 60%;
@@ -321,7 +322,7 @@ input {
   margin: 0 auto;
 }
 .wrapper .body-container .body-section .about-us .col {
-  margin: 10px 0;
+  margin: 50px 0 0 0;
 }
 .wrapper .body-container .body-section .about-us .col .display-img {
   width: 250px;
@@ -373,6 +374,9 @@ input {
   font-size: 18px;
   font-weight: 700;
 }
+.wrapper .body-container .body-section#location .address p {
+  font-size: 22px;
+}
 @media (max-width: 768px) {
   .wrapper .header .banner {
     background: url(../img/banner-xsmall.png) no-repeat;
@@ -384,6 +388,9 @@ input {
     background: url(../img/divider.png) no-repeat;
     margin: 15px auto 5px auto;
     background-size: contain;
+  }
+  .wrapper .header nav a {
+    display: block;
   }
   .wrapper .body-container .main-banner {
     height: 560px;

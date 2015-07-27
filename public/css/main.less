@@ -10,11 +10,12 @@
 @larger-font-size:20px;
 @base-font-size:18px;
 @font-size-medium:16px;
-@header-font-size:4em;
-@nav-link-font-size:1.6em;
+@header-1-font-size:3.6em;
+@header-2-font-size:2.6em;
+@nav-link-font-size:1.8em;
 
-@main-banner-height:480px;
-@main-banner-bg:url(../img/main-banner.png) no-repeat;
+@main-banner-height:500px;
+@main-banner-bg:url(../img/IMG_0425.png) no-repeat;
 @announcement-font-size:3.4em;
 @dates-font-size:3.6em;
 
@@ -22,6 +23,8 @@
 @main-banner-bg-sm:url(../img/main-banner.png) no-repeat;
 @announcement-font-size-sm:2.4em;
 @dates-font-size-sm:2.6em;
+
+@address-size:22px;
 
 
 body {
@@ -56,11 +59,11 @@ input {
 			background: url(../img/banner.png) no-repeat;
 			height: 230px;
 		    background-position-x: center;
-			h1 {
+			/*h1 {
 				margin: 0;
 				font-size: @header-font-size;
 				font-weight: 300;
-			}
+			}*/
 		}
 		
 		nav {
@@ -69,7 +72,7 @@ input {
 				color: @fontcolor;
 				margin: 0 30px;
 				padding: 5px 10px;
-				font-weight: 700;
+				/*font-weight: 700;*/
 				font-size: @nav-link-font-size;
 				.transition(0.3s color);
 				/*.transition(0.3s font-weight);*/
@@ -122,9 +125,10 @@ input {
 				padding-left: 40px;
 				background: url('../img/brush.png') no-repeat;
 				background-position-y:center;
+				font-size: @header-2-font-size;
 			}
 			p {
-				margin-left: 40px;
+				margin-left: 10px;
 			}
 			margin:60px 0 0 0;
 			padding: 0 16px;
@@ -135,7 +139,7 @@ input {
 				min-width: 320px;
 				margin: 0 auto;
 				.col {
-					margin:10px 0;
+					margin:50px 0 0 0;
 					.display-img {
 						width: @dp-width;
 						height: @dp-height;
@@ -191,6 +195,14 @@ input {
 					}
 				}
 			}
+
+			&#location {
+				.address {
+					p {
+						font-size: @address-size;
+					}
+				}
+			}
 		}
 	}
 }
@@ -209,6 +221,11 @@ input {
 				margin: 15px auto 5px auto;
 				background-size: contain;
 			}	
+			nav {
+				a {
+					display: block;
+				}
+			}
 		}
 		.body-container {
 			.main-banner {
