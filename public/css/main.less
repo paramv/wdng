@@ -1,0 +1,61 @@
+@import 'auxl.less';
+@import 'theme.less';
+@import 'lib.less';
+
+body {
+	font-family: @fontfamily,Helvetica,serif;
+	background: @bg;
+	color: @fontcolor;
+}
+.header {
+	position: fixed;
+	background: @bg;
+	padding-bottom: 10px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	.banner {
+		background: url(../img/banner.png) no-repeat;
+		padding: 150px 0;
+	    /*background-position-y: -90px;*/
+	    background-position-x: center;
+		h1 {
+			margin: 0;
+			font-size: 4em;
+			font-weight: 300;
+		}
+	}
+	
+	nav {
+		a {
+			text-decoration: none;
+			color: @fontcolor;
+			margin: 0 30px;
+			padding: 5px 10px;
+			font-size: 1.6em;
+			.transition(0.3s color);
+			/*font-weight: 400;*/
+			&.selected {
+				color:@dark-gold;
+			}
+		}
+	}	
+}
+
+.body-container {
+	margin-top: 370px;
+	.main-banner {
+		width: 90%;
+		height: 1000px;
+		margin: 30px auto 0 auto;
+		border: 5px solid #d6d6d6;
+		.border-radius(5px);
+	}
+}
+
+@media (min-width: 1200px){
+	.wrapper {
+		width:90%;
+		margin:0 auto;
+	}
+}

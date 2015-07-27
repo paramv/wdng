@@ -1,5 +1,3 @@
-@import '../fonts/quicksand.css';
-@import '../fonts/raleway.css';
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -203,74 +201,5 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid;
-  }
-}
-/*@import 'http://fonts.googleapis.com/css?family=Raleway:400,300';*/
-/*@import 'http://fonts.googleapis.com/css?family=Quicksand:300,400';*/
-/*Colors*/
-/*@light-gold:#fbffe2;*/
-/*D4BC87, #D8B76F*/
-/*Color Aliases*/
-/*@bg:url(../img/bgmesh.png) repeat;*/
-/*@bg:@maroon;
-@fontcolor:@light-gold;*/
-body {
-  font-family: 'Raleway', Helvetica, serif;
-  background: #f9f5eb;
-  color: #752225;
-}
-.header {
-  position: fixed;
-  background: #f9f5eb;
-  padding-bottom: 10px;
-  top: 0;
-  left: 0;
-  text-align: center;
-}
-.header .banner {
-  background: url(../img/banner.png) no-repeat;
-  padding: 150px 0;
-  /*background-position-y: -90px;*/
-  background-position-x: center;
-}
-.header .banner h1 {
-  margin: 0;
-  font-size: 4em;
-  font-weight: 300;
-}
-.header nav a {
-  text-decoration: none;
-  color: #752225;
-  margin: 0 30px;
-  padding: 5px 10px;
-  font-size: 1.6em;
-  -webkit-transition: 0.3s color;
-  -moz-transition: 0.3s color;
-  -ms-transition: 0.3s color;
-  -o-transition: 0.3s color;
-  /*font-weight: 400;*/
-}
-.header nav a.selected {
-  color: #d8b76f;
-}
-.body-container {
-  margin-top: 370px;
-}
-.body-container .main-banner {
-  width: 90%;
-  height: 1000px;
-  margin: 30px auto 0 auto;
-  border: 5px solid #d6d6d6;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-@media (min-width: 1200px) {
-  .wrapper {
-    width: 90%;
-    margin: 0 auto;
   }
 }
