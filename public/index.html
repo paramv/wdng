@@ -1,61 +1,104 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Our TamBrahm Wedding</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lte IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <div class="wrapper">
-            <header class="header row-fluid">
-                <div class="banner">
-                    <!-- Add image banner here -->
-                    <!-- <h1>
-                        Save the dates
-                    </h1> -->
-                </div>
-                <nav class="main-nav hidden-phone">
-                    <a class="selected" href="#wedding">Our Wedding</a>
-                    <a href="#details">Details</a>
-                    <a href="#location">Location</a>
-                    <a href="#rsvp">RSVP</a>
-                </nav>
-                <hr></hr>
-            </header>
-            <div class="body-container">
-                <div class="main-banner">
-                </div>
-            </div>
-            
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Our TamBrahm Wedding</title>
+    <meta name="description" content="">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+    <!--[if lte IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="wrapper container-fluid">
+      <header class="header row-fluid">
+        <div class="banner"></div>
+        <nav class="main-nav">
+          <a class="selected" href="#wedding">Our Wedding</a>
+          <a href="#details">Details</a>
+          <a href="#location">Location</a>
+          <a href="#rsvp">RSVP</a>
+        </nav>
+        <div class="divider"></div>
+      </header>
+      <div class="body-container">
+        <div class="main-banner">
+          <div class="announcement banner-unit">
+            We are getting married
+          </div>
+          <div class="dates banner-unit">
+            19th & 20th August
+          </div>
         </div>
-
-        <script src="js/vendor/jquery-2.1.4.min.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!-- <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script> -->
+        <div class="wedding body-section" id="wedding">
+          <h2>Our Wedding</h2>
+          <div class="row about-us">
+            <div class="col col-md-6 him">
+              <div class="display-img him"></div>
+            </div>
+            <div class="col col-md-6 her">
+              <div class="display-img her"></div>
+            </div>
+          </div>
+        </div>
+        <div class="details body-section" id="details">
+          <h2>Details</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32
+          </p>
+        </div>
+        <div class="rsvp body-section" id="rsvp">
+          <h2>RSVP</h2>
+          <div class="rows">
+            <div class="col-md-6">
+              <form action="" name="rsvp" id="rsvp-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" class="form-control input-lg"/>
+                </div>
+                <div class="form-group btn-group-wrapper" >
+                  <label title="19th August, 2015">Reception - 19/08/2015</label>
+                  <div class="btn-group reception-rsvp" role="group">
+                    <button class="btn selected btn-success">Accept</button>
+                    <button class="btn btn-default">Decline</button>
+                  </div>
+                </div>
+                <div class="form-group btn-group-wrapper">
+                  <label title="20th August, 2015">Wedding - 20/08/2015</label>
+                  <div class="btn-group wedding-rsvp" role="group">
+                    <button class="btn selected btn-success">Accept</button>
+                    <button class="btn btn-default">Decline</button>
+                  </div>
+                </div>
+                <button type="submit" class="btn submit-btn btn-default">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
         
-    </body>
+      </div>
+    </div>
+    
+  </div>
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <!-- <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='https://www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script> -->
+  
+</body>
 </html>
