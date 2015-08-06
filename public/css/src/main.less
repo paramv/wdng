@@ -1,0 +1,438 @@
+/* Font Imports */
+@import 'http://fonts.googleapis.com/css?family=Quicksand:300,400,700';
+/*@import 'http://fonts.googleapis.com/css?family=Raleway:400,300';*/
+
+@import 'theme.less';
+@import 'auxl.less';
+@import 'lib.less';
+
+/*variable definitions*/
+@dp-width:250px;
+@dp-height:250px;
+@dp-radius:@dp-width/2;
+
+
+@body-font-size:18px;
+@body-font-size-mobile:18px;
+@body-font-size-large:20px;
+
+@larger-font-size:1.111em;
+@base-font-size:1em;
+@font-size-medium:0.889em;
+@header-1-font-size:3.2em;
+@header-2-font-size:2.2em;
+@header-3-font-size:1.8em;
+@header-4-font-size:1.4em;
+@nav-link-font-size:1.4em;
+
+@announcement-font-size:2.8em;
+@dates-font-size:3em;
+@announcement-font-size-sm:2.2em;
+@dates-font-size-sm:2.4em;
+
+@event-description-font-size:1.42em;
+@address-size:1.222em;
+
+@main-banner-height:600px;
+@main-banner-height-sm:600px;
+
+@main-banner-bg:url(../../img/IMG_0425.png) no-repeat;
+@main-banner-bg-sm:url(../../img/main-banner.png) no-repeat;
+
+@scrollbtn-width:130px;
+@scrollbtn-height:50px;
+
+
+/* commons */
+body {
+	font-family: @fontfamily;
+	background: @bg;
+	color: @fontcolor;
+	font-size: @body-font-size;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+
+input,
+button,
+label {
+	font:@fontfamily;
+	color:@maroon;
+	font-size: @base-font-size;
+}
+
+h1 {
+	font-size: @header-1-font-size;
+}
+h2 {
+	font-size: @header-2-font-size;
+}
+h3 {
+	font-size: @header-3-font-size;
+}
+h4 {
+	font-size: @header-4-font-size;
+}
+input {
+	font-size: @font-size-medium;
+}
+
+/* style definitions*/
+.wrapper {
+	/*width: 1400px;*/
+	/*margin: 0 auto;*/
+	.header {
+		top: 0;
+		left: 0;
+		text-align: center;
+		.banner {
+			background: url(../../img/banner.png) no-repeat;
+			height: 230px;
+		    background-position-x: center;
+			/*h1 {
+				margin: 0;
+				font-size: @header-font-size;
+				font-weight: 300;
+			}*/
+		}
+		
+		nav {
+			a {
+				text-decoration: none;
+				color: @fontcolor;
+				margin: 0 30px;
+				padding: 5px 10px;
+				/*font-weight: 700;*/
+				font-size: @nav-link-font-size;
+				.transition(0.3s color);
+				/*.transition(0.3s font-weight);*/
+				&.selected {
+					color:@dark-gold;
+				}
+				&:hover {
+					color:@dark-gold;
+				}
+
+			}
+		}
+		.divider {
+			width: 560px;
+			height: 14px;
+			background: url(../../img/divider.png) no-repeat;
+			margin: 10px auto 5px auto;
+		}	
+	}
+
+	.body-container {
+		.main-banner {
+			padding: 20px 0 0 0;
+			height: @main-banner-height;
+			background: @main-banner-bg;
+			background-size: cover;
+			/*background: url(../../img/board.png) no-repeat;*/
+			.transition(opacity 1.6s);
+			/*.perspective(100);*/
+			opacity: 0.6;
+			.banner-unit {
+				text-align: center;
+				padding:25px 0;
+				background: rgba(255,255,255,0.7);
+				margin: 0 auto;
+				&.announcement {
+					/*.transition(transform 0.6s);*/
+					/*.rotateX(30deg);*/
+					width:600px;
+					margin-top: 50px;
+					font-size: @announcement-font-size;
+				}
+				&.dates {
+					/*.transition(transform 0.8s);*/
+					/*.rotateY(90deg);*/
+					font-size: @dates-font-size;
+					width:500px;
+					padding:40px 0;
+					margin-top:80px;
+				}
+			}
+			&.animate {
+				opacity: 1;
+				/*.banner-unit.announcement {
+					.rotateX(0deg);
+				}
+				.banner-unit.dates {
+					.rotateY(0deg);
+				}*/
+			}
+		}
+		.body-section {
+			text-align: justify;
+			h2 {
+				padding-left: 40px;
+				background: url('../../img/brush.png') no-repeat;
+				background-position-y:center;
+				font-size: @header-2-font-size;
+			}
+			h3.bride-groom {
+				text-align: center;
+			}
+			div.body-content {
+				margin-left: 10px;
+			}
+			.greetings {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				font-size: @larger-font-size;
+			}
+			margin:60px 0 0 0;
+			/*padding: 0 16px;*/
+			font-size: @base-font-size;
+			line-height: 26px;
+			.about-us{
+				width: 60%;
+				min-width: 320px;
+				margin: 0 auto;
+				.col {
+					margin-top:25px;
+					.display-img {
+						width: @dp-width;
+						height: @dp-height;
+						border-radius:@dp-radius;
+						background-size: cover;
+						background-repeat: no-repeat;
+						margin:0 auto;
+						&.him {
+							background-image: url('../../img/param1.jpg');
+						}
+						&.her {
+							background-image: url('../../img/saran2.jpg');
+						}
+					}
+					.info {
+						h3,p {
+							text-align: center;
+						}
+					}
+				}
+			}
+
+			&#details {
+				.section-description {
+					text-align: center;
+				}
+				.body-content {
+					.events {
+						.event {
+							.event-title {
+								/*font-weight: 700;*/
+								font-size: @header-3-font-size;
+								text-align: center;
+							}
+							.event-description {
+								font-size: @event-description-font-size;
+								font-weight: 300;
+								text-align: center;
+							}
+							ul {
+								margin-top: 25px;
+								padding-left: 0;
+								li.event-child {
+									list-style-type: none;
+									margin-top: 20px;
+									margin-bottom: 20px;
+									.title {
+										cursor: pointer;
+										.collapse,.expand {
+											font-size: @font-size-medium;
+										}
+										.collapse {
+											display: inline;
+										}
+										.expand {
+											display: none;
+										}
+									}
+									.event-child-wrapper {
+										.transition(0.4s height);
+										.time,
+										.description {
+											margin-left: 30px;
+										}
+										.time {
+		
+										}
+										.description {
+											overflow: hidden;
+											height: auto;
+										}
+									}
+									&.closed {
+										.title {
+											.collapse {
+												display: none;
+											}
+											.expand {
+												display: inline;
+											}
+										}
+										.event-child-wrapper {
+											.description {
+												height: 0;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			/* Location section*/
+			&#location {
+				.address {
+					p {
+						font-size: @address-size;
+					}
+				}
+			}
+
+			/* RSVP form*/
+			&#rsvp {
+				form {
+					margin: 0 0 0 30px;
+					input {
+						font-size: @font-size-medium;
+						color: @maroon;
+						/*width: 120px;*/
+					}
+					label {
+						/*font-size: @base-font-size;*/
+						margin-top: 10px;
+						font-weight: 700;
+						margin-right: 20px;
+					}
+					.btn-group {
+						.btn {
+							width: 100px;
+							font-family:@fontfamily;
+							font-size: @base-font-size;
+						}
+						/*.btn.selected {
+							background: @light-gold;
+						}*/
+						margin-top:10px;
+						margin-bottom: 10px;
+					}
+					.btn-group-wrapper {
+						label {
+							margin-right: 30px;
+						}
+					}
+					.submit-btn {
+						margin-top: 20px;
+						.btn-mixin();	
+						font-weight: 700;
+					}
+				}
+				.thank-you {
+					display: none;
+					div {
+						margin-left: 30px;
+					}
+				}
+			}
+			
+
+		}
+	}
+
+	.scroll-to-top {
+		width: @scrollbtn-width;
+		/*height: @scrollbtn-height;*/
+		padding-top: 5px;
+		font-size: 36px;
+		bottom: 25px;
+		right: 25px;
+		text-align: center;
+		background: @dark-gold;
+		opacity: 0.8;
+		.border-radius(15px);
+		cursor: pointer;
+		span {
+			
+		}
+		position:fixed;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: @body-font-size-mobile;
+	}
+	.wrapper {
+		.header {
+			.banner {
+				background: url(../../img/banner-xsmall.png) no-repeat;
+				background-position-x: center;
+			}
+			.divider {
+				width: 320px;
+				height: 14px;
+				background: url(../../img/divider.png) no-repeat;
+				margin: 15px auto 5px auto;
+				background-size: contain;
+			}	
+			nav {
+				a {
+					display: block;
+				}
+			}
+		}
+		.body-container {
+			.main-banner {
+				height:@main-banner-height-sm;
+				.banner-unit{
+					&.announcement {
+						width:300px;
+						font-size: @announcement-font-size-sm;
+					}
+					&.dates {
+						width: 300px;
+						font-size: @dates-font-size-sm;
+					}
+				}
+			}
+		}
+		
+	} 
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	/*.wrapper {
+		.header {
+			.banner {
+				background: url(../../img/banner-small.png) no-repeat;
+				background-position-x: center;
+			}
+		}
+	} */
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.wrapper {
+			
+	}
+}
+
+@media (min-width: 1200px){
+	.wrapper {
+		.header {
+			.banner {
+				background: url(../../img/banner-large.png) no-repeat;
+				background-position-x: center;
+			}
+		}
+	}
+}

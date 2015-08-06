@@ -1,5 +1,8 @@
 @import '../fonts/quicksand.css';
-@import '../fonts/raleway.css';
+/* Font Imports */
+/*@import 'http://fonts.googleapis.com/css?family=Raleway:400,300';*/
+/*Colors*/
+/*Color Aliases*/
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -205,20 +208,13 @@ textarea {
     page-break-after: avoid;
   }
 }
-/*@import 'http://fonts.googleapis.com/css?family=Raleway:400,300';*/
-/*@import 'http://fonts.googleapis.com/css?family=Quicksand:300,400';*/
-/*Colors*/
-/*@light-gold:#fbffe2;*/
-/*D4BC87, #D8B76F*/
-/*Color Aliases*/
-/*@bg:@light-gold;*/
-/*@bg:@maroon;
-@fontcolor:@light-gold;*/
+/*variable definitions*/
+/* commons */
 body {
   font-family: 'Quicksand', Helvetica, serif;
-  background: url(../img/pattern.png) repeat;
+  background: url(../../img/pattern.png) repeat;
   color: #752225;
-  /*font-size: 14px;*/
+  font-size: 18px;
   font-weight: 400;
   padding-bottom: 20px;
 }
@@ -227,12 +223,24 @@ button,
 label {
   font: 'Quicksand', Helvetica, serif;
   color: #752225;
-  font-size: 18px;
-  /*font-weight: 700;*/
+  font-size: 1em;
+}
+h1 {
+  font-size: 3.2em;
+}
+h2 {
+  font-size: 2.2em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.4em;
 }
 input {
-  font-size: 16px;
+  font-size: 0.889em;
 }
+/* style definitions*/
 .wrapper {
   /*width: 1400px;*/
   /*margin: 0 auto;*/
@@ -243,7 +251,7 @@ input {
   text-align: center;
 }
 .wrapper .header .banner {
-  background: url(../img/banner.png) no-repeat;
+  background: url(../../img/banner.png) no-repeat;
   height: 230px;
   background-position-x: center;
   /*h1 {
@@ -258,7 +266,7 @@ input {
   margin: 0 30px;
   padding: 5px 10px;
   /*font-weight: 700;*/
-  font-size: 1.8em;
+  font-size: 1.4em;
   -webkit-transition: 0.3s color;
   -moz-transition: 0.3s color;
   -ms-transition: 0.3s color;
@@ -274,15 +282,21 @@ input {
 .wrapper .header .divider {
   width: 560px;
   height: 14px;
-  background: url(../img/divider.png) no-repeat;
-  margin: 15px auto 5px auto;
+  background: url(../../img/divider.png) no-repeat;
+  margin: 10px auto 5px auto;
 }
 .wrapper .body-container .main-banner {
   padding: 20px 0 0 0;
-  height: 500px;
-  background: url(../img/IMG_0425.png) no-repeat;
+  height: 600px;
+  background: url(../../img/IMG_0425.png) no-repeat;
   background-size: cover;
-  /*background: url(../img/board.png) no-repeat;*/
+  /*background: url(../../img/board.png) no-repeat;*/
+  -webkit-transition: opacity 1.6s;
+  -moz-transition: opacity 1.6s;
+  -ms-transition: opacity 1.6s;
+  -o-transition: opacity 1.6s;
+  /*.perspective(100);*/
+  opacity: 0.6;
 }
 .wrapper .body-container .main-banner .banner-unit {
   text-align: center;
@@ -291,30 +305,54 @@ input {
   margin: 0 auto;
 }
 .wrapper .body-container .main-banner .banner-unit.announcement {
+  /*.transition(transform 0.6s);*/
+  /*.rotateX(30deg);*/
   width: 600px;
   margin-top: 50px;
-  font-size: 3.4em;
+  font-size: 2.8em;
 }
 .wrapper .body-container .main-banner .banner-unit.dates {
-  font-size: 3.6em;
+  /*.transition(transform 0.8s);*/
+  /*.rotateY(90deg);*/
+  font-size: 3em;
   width: 500px;
   padding: 40px 0;
   margin-top: 80px;
 }
+.wrapper .body-container .main-banner.animate {
+  opacity: 1;
+  /*.banner-unit.announcement {
+					.rotateX(0deg);
+				}
+				.banner-unit.dates {
+					.rotateY(0deg);
+				}*/
+}
 .wrapper .body-container .body-section {
+  text-align: justify;
   margin: 60px 0 0 0;
-  padding: 0 16px;
-  font-size: 18px;
+  /*padding: 0 16px;*/
+  font-size: 1em;
   line-height: 26px;
+  /* Location section*/
+  /* RSVP form*/
 }
 .wrapper .body-container .body-section h2 {
   padding-left: 40px;
-  background: url('../img/brush.png') no-repeat;
+  background: url('../../img/brush.png') no-repeat;
   background-position-y: center;
-  font-size: 2.6em;
+  font-size: 2.2em;
 }
-.wrapper .body-container .body-section p {
+.wrapper .body-container .body-section h3.bride-groom {
+  text-align: center;
+}
+.wrapper .body-container .body-section div.body-content {
   margin-left: 10px;
+}
+.wrapper .body-container .body-section .greetings {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.111em;
 }
 .wrapper .body-container .body-section .about-us {
   width: 60%;
@@ -322,7 +360,7 @@ input {
   margin: 0 auto;
 }
 .wrapper .body-container .body-section .about-us .col {
-  margin: 50px 0 0 0;
+  margin-top: 25px;
 }
 .wrapper .body-container .body-section .about-us .col .display-img {
   width: 250px;
@@ -333,16 +371,81 @@ input {
   margin: 0 auto;
 }
 .wrapper .body-container .body-section .about-us .col .display-img.him {
-  background-image: url('../img/param.jpg');
+  background-image: url('../../img/param1.jpg');
 }
 .wrapper .body-container .body-section .about-us .col .display-img.her {
-  background-image: url('../img/saranya.jpg');
+  background-image: url('../../img/saran2.jpg');
+}
+.wrapper .body-container .body-section .about-us .col .info h3,
+.wrapper .body-container .body-section .about-us .col .info p {
+  text-align: center;
+}
+.wrapper .body-container .body-section#details .section-description {
+  text-align: center;
+}
+.wrapper .body-container .body-section#details .body-content .events .event .event-title {
+  /*font-weight: 700;*/
+  font-size: 1.8em;
+  text-align: center;
+}
+.wrapper .body-container .body-section#details .body-content .events .event .event-description {
+  font-size: 1.42em;
+  font-weight: 300;
+  text-align: center;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul {
+  margin-top: 25px;
+  padding-left: 0;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child .title {
+  cursor: pointer;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child .title .collapse,
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child .title .expand {
+  font-size: 0.889em;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child .title .collapse {
+  display: inline;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child .title .expand {
+  display: none;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child .event-child-wrapper {
+  -webkit-transition: 0.4s height;
+  -moz-transition: 0.4s height;
+  -ms-transition: 0.4s height;
+  -o-transition: 0.4s height;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child .event-child-wrapper .time,
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child .event-child-wrapper .description {
+  margin-left: 30px;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child .event-child-wrapper .description {
+  overflow: hidden;
+  height: auto;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child.closed .title .collapse {
+  display: none;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child.closed .title .expand {
+  display: inline;
+}
+.wrapper .body-container .body-section#details .body-content .events .event ul li.event-child.closed .event-child-wrapper .description {
+  height: 0;
+}
+.wrapper .body-container .body-section#location .address p {
+  font-size: 1.222em;
 }
 .wrapper .body-container .body-section#rsvp form {
   margin: 0 0 0 30px;
 }
 .wrapper .body-container .body-section#rsvp form input {
-  font-size: 16px;
+  font-size: 0.889em;
   color: #752225;
   /*width: 120px;*/
 }
@@ -360,9 +463,9 @@ input {
   margin-bottom: 10px;
 }
 .wrapper .body-container .body-section#rsvp form .btn-group .btn {
-  width: 180px;
+  width: 100px;
   font-family: 'Quicksand', Helvetica, serif;
-  font-size: 18px;
+  font-size: 1em;
 }
 .wrapper .body-container .body-section#rsvp form .btn-group-wrapper label {
   margin-right: 30px;
@@ -371,21 +474,46 @@ input {
   margin-top: 20px;
   color: #752225;
   font-family: 'Quicksand', Helvetica, serif;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 700;
 }
-.wrapper .body-container .body-section#location .address p {
-  font-size: 22px;
+.wrapper .body-container .body-section#rsvp .thank-you {
+  display: none;
+}
+.wrapper .body-container .body-section#rsvp .thank-you div {
+  margin-left: 30px;
+}
+.wrapper .scroll-to-top {
+  width: 130px;
+  /*height: @scrollbtn-height;*/
+  padding-top: 5px;
+  font-size: 36px;
+  bottom: 25px;
+  right: 25px;
+  text-align: center;
+  background: #d8b76f;
+  opacity: 0.8;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  cursor: pointer;
+  position: fixed;
 }
 @media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
   .wrapper .header .banner {
-    background: url(../img/banner-xsmall.png) no-repeat;
+    background: url(../../img/banner-xsmall.png) no-repeat;
     background-position-x: center;
   }
   .wrapper .header .divider {
     width: 320px;
     height: 14px;
-    background: url(../img/divider.png) no-repeat;
+    background: url(../../img/divider.png) no-repeat;
     margin: 15px auto 5px auto;
     background-size: contain;
   }
@@ -393,15 +521,15 @@ input {
     display: block;
   }
   .wrapper .body-container .main-banner {
-    height: 560px;
+    height: 600px;
   }
   .wrapper .body-container .main-banner .banner-unit.announcement {
     width: 300px;
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
   .wrapper .body-container .main-banner .banner-unit.dates {
     width: 300px;
-    font-size: 2.6em;
+    font-size: 2.4em;
   }
 }
 /* Small devices (tablets, 768px and up) */
@@ -409,7 +537,7 @@ input {
   /*.wrapper {
 		.header {
 			.banner {
-				background: url(../img/banner-small.png) no-repeat;
+				background: url(../../img/banner-small.png) no-repeat;
 				background-position-x: center;
 			}
 		}
@@ -418,7 +546,7 @@ input {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 1200px) {
   .wrapper .header .banner {
-    background: url(../img/banner-large.png) no-repeat;
+    background: url(../../img/banner-large.png) no-repeat;
     background-position-x: center;
   }
 }

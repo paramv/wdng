@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/brush.png">
+    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
     <title>Our TamBrahm Wedding</title>
     <meta name="description" content="">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- build:css css/dist/style.css -->
+    <link rel="stylesheet" href="css/src/bootstrap.min.css">
+    <link href="css/src/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/src/main.css">
+    <!-- endbuild -->
   </head>
   <body>
     <!--[if lte IE 8]>
@@ -25,7 +28,7 @@
           <a class="selected" href="#wedding">Our Wedding</a>
           <a href="#details">Details</a>
           <a href="#location">Location</a>
-          <!-- <a href="#galler">RSVP</a> -->
+          <a href="#rsvp">RSVP</a>
         </nav>
         <div class="divider"></div>
       </header>
@@ -38,68 +41,203 @@
             19th & 20th August
           </div>
         </div>
+
         <div class="wedding body-section" id="wedding">
           <h2>Our Wedding</h2>
+          <div class="row greetings">
+            <div class="col col-md-12">
+              <p>
+                Greetings from Saranya and Param, we're getting married on the 20th of August and would love it if you could be there during this joyous occassion. It all started in college in 2007, eight years later we're ready to join hands and together embark on this brilliant yet unpredictable journey called life. A TamBrahm wedding in all its glory (well most of it atleast) with two days of fun, frolic, color and of course, food.
+              </p>
+              <p>
+                We invite you and your family to our wedding. Seriously now, please do come! 
+              </p>
+            </div>
+          </div>
+
+          <h3 class="bride-groom">The Bride and Groom</h3>
           <div class="row about-us">
             <div class="col col-md-6 her">
               <div class="display-img her"></div>
+              <div class="info her">
+                <h3>Saranyashree</h3>
+                <p>An Electrical Engineer by profession and a budding veena player. A big fan of mythology and the Gita she could school you on the Ramayana and Mahabharata.</p>
+              </div>
             </div>
             <div class="col col-md-6 him">
               <div class="display-img him"></div>
+              <div class="info her">
+                <h3>Parameswaran (Rohit)</h3>
+                <p>A cliched Software (saaft-tu-veru) Engineer who likes to think he's different (ha!). Still watches anime, reads the occassional comic and loves SciFi.</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row the-wedding">
+            <h3>Oh yeah we're tying the knot!</h3>
+          </div> -->
+        </div>
+
+        <div class="details body-section" id="details">
+          <h2>Details</h2>
+          <h3 class="section-description">Ever wondered what happens in a TamBrahm wedding?</h3>
+          <div class="body-content">
+            <div class="row events">
+              <div class="col-md-6 event reception">
+                <h3 class="event-title">
+                  August 19,2015
+                </h3>
+                <p class="event-description">D-Day-1 (the day before the wedding)</p>
+                <ul>
+                  <li class="event-child">
+                    <h4 class="title">
+                      <span class="glyphicon glyphicon-plus expand event-child-icon"></span>
+                      <span class="glyphicon glyphicon-minus collapse event-child-icon"></span>
+                      Vridham
+                    </h4>
+                    <div class="event-child-wrapper">
+                      <p class="time">10.30 AM to 11 AM</p>
+                      <p class="description">
+                        Loosely translates to "fast". Apparently the groom is the only one doing the fasting. Additionally, they tie a "kaapu" (a yellow thread) for the bride and groom - to ward off evils.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="event-child">
+                    <h4 class="title">
+                      <span class="glyphicon glyphicon-plus expand event-child-icon"></span>
+                      <span class="glyphicon glyphicon-minus collapse event-child-icon"></span>
+                      Nichyadartham
+                    </h4>
+                    <div class="event-child-wrapper">
+                      <p class="time">11 AM to 11.30 AM</p>
+                      <p class="description">
+                        Pronounced as Nitch-aya-daaratham. Translates to engagement. 
+                      </p>
+                    </div>
+                  </li>
+                  <li class="event-child">
+                    <h4 class="title">
+                      <span class="glyphicon glyphicon-plus expand event-child-icon"></span>
+                      <span class="glyphicon glyphicon-minus collapse event-child-icon"></span>
+                      Reception
+                    </h4>
+                    <div class="event-child-wrapper">
+                      <p class="time">6.30 PM onwards</p>
+                      <p class="description">
+                        South Indian weddings usually have weird timings and the bride/groom don't have a say in it. The wedding could start as early as 4 AM. Hence a reception for those who'd find it difficult to make it to the wedding.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 event wedding">
+                <h3 class="event-title">
+                  August 20,2015
+                </h3>
+                <p class="event-description">D-Day</p>
+                <ul>
+                  <li class="event-child">
+                    <h4 class="title">
+                      <span class="glyphicon glyphicon-plus expand event-child-icon"></span>
+                      <span class="glyphicon glyphicon-minus collapse event-child-icon"></span>
+                      Kaasi Yatra
+                    </h4>
+                    <div class="event-child-wrapper">
+                      <p class="time">7.30 AM to 8 AM</p>
+                      <p class="description">
+                        Journey to the holy land of Kaasi (Varanasi). The story of the "Runaway Groom" where the groom has an epiphany and decides to jump ship by heading off to Kaasi - to become a "sanyasi". This is followed by the bride's family telling the groom about the benefits of marriage and bribing him with an umbrella and slippers.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="event-child">
+                    <h4 class="title">
+                      <span class="glyphicon glyphicon-plus expand event-child-icon"></span>
+                      <span class="glyphicon glyphicon-minus collapse event-child-icon"></span>
+                      Oonjal (swiiiiiiiing)
+                    </h4>
+                    <div class="event-child-wrapper">
+                      <p class="time">8 AM to 8.30 AM</p>
+                      <p class="description">
+                        The bride and groom are seated on a swing (oonjal) surrounded by people singing songs and doing stuff with colored balls. The swing swaying back and forth with the couple seated on it signifies them staying together in ups and downs. Deep!
+                      </p>
+                    </div>
+                  </li>
+                  <li class="event-child">
+                    <h4 class="title">
+                      <span class="glyphicon glyphicon-plus expand event-child-icon"></span>
+                      <span class="glyphicon glyphicon-minus collapse event-child-icon"></span>
+                      Muhurtham
+                    </h4>
+                    <div class="event-child-wrapper">
+                      <p class="time">9.30 AM to 10.15 AM</p>
+                      <p class="description">
+                        The grand finale. The events of the last two days culminates in a dramatic climax. This is made up of a number of events like Paadha poojai - washing the groom's feet with milk and water, Kanya-dhaanam - giving away the bride to the groom, maangalya-dhaaram - tying the quintessential "thaali" and doing rounds around the fire-pot.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="details body-section" id="details">
-          <h2>Details</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32
-          </p>
-        </div>
-        <div class="rsvp body-section hidden" id="rsvp">
-          <h2>RSVP</h2>
-          <div class="rows">
-            <div class="col-md-6">
-              <form action="" name="rsvp" id="rsvp-form">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name" class="form-control input-lg"/>
-                </div>
-                <div class="form-group btn-group-wrapper" >
-                  <label title="19th August, 2015">Reception - 19/08/2015</label>
-                  <div class="btn-group reception-rsvp" role="group">
-                    <button class="btn selected btn-success">Accept</button>
-                    <button class="btn btn-default">Decline</button>
-                  </div>
-                </div>
-                <div class="form-group btn-group-wrapper">
-                  <label title="20th August, 2015">Wedding - 20/08/2015</label>
-                  <div class="btn-group wedding-rsvp" role="group">
-                    <button class="btn selected btn-success">Accept</button>
-                    <button class="btn btn-default">Decline</button>
-                  </div>
-                </div>
-                <button type="submit" class="btn submit-btn btn-default">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
+        
         <div class="location body-section" id="location">
           <h2>Location</h2>
-          <div class="address">
-            <p><a href="https://www.google.co.in/maps/place/Jayachandran+Mahal/@12.9646464,80.1906426,17z/data=!4m2!3m1!1s0x3a525e7589fb1173:0x399abec0e6e1f70a" target="_new"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Find Me</a></p>
-            <p>Jayachandran Mahal</p>
-            <p>Ganesh Nagar, Iyappa Nagar, Keelkattalai</p>
-            <p>Chennai, Tamil Nadu 600117</p>
+          <div class="row">
+            <div class="address col-md-12">
+              <p><a href="https://www.google.co.in/maps/place/Jayachandran+Mahal/@12.9612485,80.1874776,19z/data=!3m1!4b1!4m7!1m4!3m3!1s0x3a525e7589fb1173:0x399abec0e6e1f70a!2sJayachandran+Mahal!3b1!3m1!1s0x3a525e7589fb1173:0x399abec0e6e1f70a" target="_new"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Find Me</a></p>
+              <p>Jeyachandran Mahal</p>
+              <p>Ganesh Nagar, Iyappa Nagar, Keelkattalai</p>
+              <p>Chennai, Tamil Nadu 600117</p>
+            </div>
           </div>
-          
         </div>
-        
-      </div>
+
+        <div class="rsvp body-section" id="rsvp">
+            <h2>RSVP</h2>
+            <div class="row rsvp-form">
+              <div class="col-md-6">
+                <form action="" name="rsvp" id="rsvp-form">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" required name="name" id="name" class="form-control input-lg" placeholder="Please do leave your name"/>
+                    <label for="message">A message for the couple</label>
+                    <textarea name="message" id="message" class="form-control" rows="4"></textarea>
+                  </div>
+                  <div class="form-group btn-group-wrapper" >
+                    <label title="19th August, 2015">Reception - 19/08/2015</label>
+                    <div class="btn-group reception-rsvp" role="group">
+                      <button class="btn selected btn-success" data-value="accept">Accept</button>
+                      <button class="btn btn-default" data-value="decline">Decline</button>
+                    </div>
+                  </div>
+                  <div class="form-group btn-group-wrapper">
+                    <label title="20th August, 2015">Wedding - 20/08/2015</label>
+                    <div class="btn-group wedding-rsvp" role="group">
+                      <button class="btn selected btn-success" data-value="accept">Accept</button>
+                      <button class="btn btn-default" data-value="decline">Decline</button>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn submit-btn btn-default">Submit</button>
+                </form>
+              </div>
+            </div>
+            <div class="row thank-you">
+              <div class="col-md-6">
+                <h3>Thank you!</h3>
+              </div>
+            </div>
+        </div>
+      <!-- <div class="scroll-to-top">
+        <span class="glyphicon glyphicon-menu-up"></span>
+      </div> -->
     </div>
-    
   </div>
+  <!-- build:js js/dist/app.js -->
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="js/vendor/jquery-2.1.4.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/src/main.js"></script>
+  <!-- endbuild -->
+
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <!-- <script>
   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

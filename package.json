@@ -1,0 +1,21 @@
+{
+  "name": "wedding-site",
+  "version": "1.0.0",
+  "description": "Uh, my wedding site!",
+  "author": "parameshv.29@gmail.com",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-processhtml": "*",
+    "grunt-replace-text": "*",
+    "grunt-smushit": "*",
+    "grunt-usemin": "*"
+  },
+  "license": "MIT"
+}
