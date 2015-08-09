@@ -10,7 +10,11 @@
     <meta name="description" content="">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/dist/style.css">
+    <!-- build:css css/dist/style.css -->
+    <link rel="stylesheet" href="css/src/bootstrap.min.css">
+    <link href="css/src/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/src/main.css">
+    <!-- endbuild -->
   </head>
   <body>
     <!--[if lte IE 8]>
@@ -229,7 +233,11 @@
       </div> -->
     </div>
   </div>
-  <script src="js/dist/app.js"></script>
+  <!-- build:js js/dist/app.js -->
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/src/main.js"></script>
+  <!-- endbuild -->
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <!-- <script>

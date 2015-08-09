@@ -50,6 +50,9 @@ $(function() {
 	});
 
 	$('#rsvp-form').on('submit',function(e){
+		/*Heroku URL*/
+		// var url = 'https://arcane-thicket-3405.herokuapp.com/attendee';
+		var url = 'http://userver:3000/attendee';
 		e.preventDefault();
 		var name,
 			message,
@@ -62,8 +65,8 @@ $(function() {
 			return false;
 		}
 		message = $('#message').val();
-		weddingStatus = $('.wedding-rsvp .selected').attr('data-value');
-		receptionStatus = $('.reception-rsvp .selected').attr('data-value');
+		weddingStatus = $('.wedding-rsvp .selected').attr('data-value') == 'accept';
+		receptionStatus = $('.reception-rsvp .selected').attr('data-value') == 'accept';
 
 		payload = {
 			name:name,
@@ -72,10 +75,13 @@ $(function() {
 			receptionStatus:receptionStatus
 		};
 
-		console.log(payload);
-		$('.rsvp-form').hide();
-		$('.thank-you').show();
-
+		$.post(url,payload).done(function(r){
+			$('.rsvp-form').hide();
+			$('.thank-you').show();
+			$('.server-error').addClass('hidden');
+		}).fail(function(){
+			$('.server-error').removeClass('hidden');
+		});
 	});
 
 });
