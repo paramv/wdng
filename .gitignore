@@ -3,3 +3,6 @@
 design/
 public/fonts
 node_modules/
+public/img/*.jpg
+public/img/*.png
+public/img/*.JPG
